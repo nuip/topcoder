@@ -21,35 +21,18 @@
 #define pb push_back
 #define pqPair priority_queue<pair<int,int>,vector<pair<int,int> >,greater<pair<int,int> > >
 
-#define ll long long
+#define long_long long long
 // BEGIN CUT HERE
-#define ll __int64
+#define long_long __int64
 // END CUT HERE
 
 using namespace std;
+typedef long_long ll;
 
 class TeamsSelection {
 public:
   string simulate(vector <int> preference1, vector <int> preference2) {
-    char re[60];
-    int i,i1,i2;
-    bool used[60];
-    memset(used,0,sizeof(used));
-    re[preference1.size()]='\0';
-    for(i=i1=i2=0;i<preference1.size();i++){
-      if(i%2==0){
-        while(used[preference1[i1]])
-          i1++;
-        used[preference1[i1]]=1;
-        re[preference1[i1]-1]='1';
-      }else{
-        while(used[preference2[i2]])
-          i2++;
-        used[preference2[i2]]=1;
-        re[preference2[i2]-1]='2';
-      }
-    }
-    return string(re);
+    
   }
   
 // BEGIN CUT HERE
